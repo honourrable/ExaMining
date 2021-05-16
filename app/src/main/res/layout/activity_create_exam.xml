@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".ActivityCreateExam">
+
+    <TextView
+        android:id="@+id/titleActivityExam"
+        android:layout_width="345dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="#05D3ED"
+        android:padding="12dp"
+        android:text="@string/create_exam"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewQuestionsExam"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleActivityExam" />
+
+    <TextView
+        android:id="@+id/timeLabelExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/exam_countdown"
+        app:layout_constraintBottom_toTopOf="@+id/questionDifficultyLabelExam"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/timeHourExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:autofillHints=" "
+        android:hint="@string/_00"
+        android:inputType="phone"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/timeColonExam"
+        app:layout_constraintStart_toEndOf="@+id/timeLabelExam"
+        app:layout_constraintTop_toTopOf="@+id/timeColonExam"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/timeColonExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/colon"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/timeMinuteExam"
+        app:layout_constraintStart_toEndOf="@+id/timeHourExam"
+        app:layout_constraintTop_toTopOf="@+id/timeMinuteExam"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/timeMinuteExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints=" "
+        android:hint="@string/_00"
+        android:inputType="phone"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/difficultySeekBarExam"
+        app:layout_constraintStart_toEndOf="@+id/timeColonExam" />
+
+    <TextView
+        android:id="@+id/questionDifficultyLabelExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:text="@string/difficulty"
+        app:layout_constraintBottom_toBottomOf="@+id/difficultySeekBarExam"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/difficultySeekBarExam"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <SeekBar
+        android:id="@+id/difficultySeekBarExam"
+        android:layout_width="200dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="20dp"
+        android:max="5"
+        android:min="2"
+        app:layout_constraintBottom_toTopOf="@+id/pointSeekBarExam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintStart_toEndOf="@+id/questionDifficultyLabelExam" />
+
+    <TextView
+        android:id="@+id/difficultySeekBarValueExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toEndOf="@+id/difficultySeekBarExam"
+        app:layout_constraintTop_toBottomOf="@+id/timeMinuteExam" />
+
+    <TextView
+        android:id="@+id/questionPointLabelExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:text="@string/question_point"
+        app:layout_constraintBottom_toBottomOf="@+id/pointSeekBarExam"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pointSeekBarExam" />
+
+    <SeekBar
+        android:id="@+id/pointSeekBarExam"
+        android:layout_width="200dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="23dp"
+        android:max="100"
+        android:min="1"
+        app:layout_constraintBottom_toTopOf="@+id/button_ok_exam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/questionPointLabelExam" />
+
+    <TextView
+        android:id="@+id/pointSeekBarValueExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/difficultySeekBarValueExam"
+        app:layout_constraintTop_toBottomOf="@+id/difficultySeekBarValueExam" />
+
+    <ImageButton
+        android:id="@+id/button_ok_exam"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="36dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="@string/todo"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonReset_exam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonReset_exam"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/button_ok" />
+
+    <ImageButton
+        android:id="@+id/buttonReset_exam"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="@string/todo"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_ok_exam"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/button_reset" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

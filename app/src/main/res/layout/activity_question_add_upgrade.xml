@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/optionE_upg_quest"
+        app:layout_constraintTop_toBottomOf="@+id/optionE_upg_quest"
+        tools:context=".ActivityQuestionAddUpgrade">
+
+        <TextView
+            android:id="@+id/titleActivity"
+            android:layout_width="345dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="32dp"
+            android:background="#05D3ED"
+            android:padding="18dp"
+            android:text="@string/space"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/questionTextLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/question"
+            app:layout_constraintBottom_toTopOf="@+id/optionALabel2"
+            app:layout_constraintEnd_toStartOf="@+id/questionText_upg_quest"
+            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleActivity" />
+
+        <EditText
+            android:id="@+id/questionText_upg_quest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=" "
+            android:ems="12"
+            android:hint="@string/space"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toBottomOf="@+id/questionTextLabel"
+            app:layout_constraintStart_toStartOf="@+id/optionA_upg_quest"
+            app:layout_constraintTop_toTopOf="@+id/questionTextLabel" />
+
+        <TextView
+            android:id="@+id/optionALabel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/optionA"
+            app:layout_constraintBottom_toTopOf="@+id/optionBLabel2"
+            app:layout_constraintStart_toStartOf="@+id/questionTextLabel"
+            app:layout_constraintTop_toBottomOf="@+id/questionTextLabel" />
+
+        <EditText
+            android:id="@+id/optionA_upg_quest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=" "
+            android:ems="12"
+            android:hint="@string/space"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toBottomOf="@+id/optionALabel2"
+            app:layout_constraintStart_toStartOf="@+id/optionB_upg_quest"
+            app:layout_constraintTop_toTopOf="@+id/optionALabel2" />
+
+
+        <TextView
+            android:id="@+id/optionBLabel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/optionB"
+            app:layout_constraintBottom_toTopOf="@+id/optionCLabel2"
+            app:layout_constraintStart_toStartOf="@+id/optionALabel2"
+            app:layout_constraintTop_toBottomOf="@+id/optionALabel2" />
+
+
+        <EditText
+            android:id="@+id/optionB_upg_quest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=" "
+            android:ems="12"
+            android:hint="@string/space"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toBottomOf="@+id/optionBLabel2"
+            app:layout_constraintStart_toStartOf="@+id/optionC_upg_quest"
+            app:layout_constraintTop_toTopOf="@+id/optionBLabel2" />
+
+        <TextView
+            android:id="@+id/optionCLabel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/optionC"
+            app:layout_constraintBottom_toTopOf="@+id/optionDLabel2"
+            app:layout_constraintStart_toStartOf="@+id/optionBLabel2"
+            app:layout_constraintTop_toBottomOf="@+id/optionBLabel2" />
+
+        <EditText
+            android:id="@+id/optionC_upg_quest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=" "
+            android:ems="12"
+            android:hint="@string/space"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toBottomOf="@+id/optionCLabel2"
+            app:layout_constraintStart_toStartOf="@+id/optionD_upg_quest"
+            app:layout_constraintTop_toTopOf="@+id/optionCLabel2" />
+
+        <TextView
+            android:id="@+id/optionDLabel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/optionD"
+            app:layout_constraintBottom_toTopOf="@+id/optionELabel2"
+            app:layout_constraintStart_toStartOf="@+id/optionCLabel2"
+            app:layout_constraintTop_toBottomOf="@+id/optionCLabel2" />
+
+        <EditText
+            android:id="@+id/optionD_upg_quest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:autofillHints=" "
+            android:ems="12"
+            android:hint="@string/space"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toBottomOf="@+id/optionDLabel2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/optionDLabel2" />
+
+        <TextView
+            android:id="@+id/optionELabel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/optionE"
+            app:layout_constraintBottom_toTopOf="@+id/answerLabel"
+            app:layout_constraintStart_toStartOf="@+id/optionDLabel2"
+            app:layout_constraintTop_toBottomOf="@+id/optionDLabel2" />
+
+        <EditText
+            android:id="@+id/optionE_upg_quest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=" "
+            android:ems="12"
+            android:hint="@string/space"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toBottomOf="@+id/optionELabel2"
+            app:layout_constraintStart_toStartOf="@+id/optionD_upg_quest"
+            app:layout_constraintTop_toTopOf="@+id/optionELabel2" />
+
+        <TextView
+            android:id="@+id/answerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/answer"
+            app:layout_constraintBottom_toBottomOf="@+id/answer_upg_quest"
+            app:layout_constraintStart_toStartOf="@+id/optionELabel2"
+            app:layout_constraintTop_toTopOf="@+id/answer_upg_quest" />
+
+        <EditText
+            android:id="@+id/answer_upg_quest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=" "
+            android:ems="12"
+            android:hint="@string/space"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toTopOf="@+id/buttonReset_upg"
+            app:layout_constraintStart_toStartOf="@+id/optionE_upg_quest"
+            app:layout_constraintTop_toBottomOf="@+id/optionE_upg_quest" />
+
+        <ImageButton
+            android:id="@+id/attach_file_upg_quest"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="84dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/todo"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonReset_upg"
+            app:layout_constraintHorizontal_bias="0.155"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/button_attach_file" />
+
+        <ImageButton
+            android:id="@+id/attach_file_ok_upg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="24dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/todo"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonReset_upg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/buttonReset_upg"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/button_ok" />
+
+        <ImageButton
+            android:id="@+id/buttonReset_upg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="41dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/todo"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="@+id/attach_file_upg_quest"
+            app:layout_constraintEnd_toStartOf="@+id/attach_file_ok_upg"
+            app:layout_constraintTop_toTopOf="@+id/attach_file_upg_quest"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/button_reset" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

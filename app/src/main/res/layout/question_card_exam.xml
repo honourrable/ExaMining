@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardView"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="340dp"
+            android:layout_height="190dp"
+            app:layout_constraintBottom_toBottomOf="@+id/optionALabel"
+            app:layout_constraintTop_toBottomOf="@+id/optionALabel"
+            tools:layout_editor_absoluteX="63dp">
+
+            <TextView
+                android:id="@+id/questionTextExam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/optionAExam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/optionALabelExam"
+                app:layout_constraintStart_toEndOf="@+id/optionALabelExam"
+                app:layout_constraintTop_toTopOf="@+id/optionALabelExam" />
+
+            <TextView
+                android:id="@+id/optionALabelExam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/A"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/questionTextExam" />
+
+            <TextView
+                android:id="@+id/optionBExam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/optionBLabelExam"
+                app:layout_constraintStart_toEndOf="@+id/optionBLabelExam"
+                app:layout_constraintTop_toTopOf="@+id/optionBLabelExam" />
+
+            <TextView
+                android:id="@+id/optionBLabelExam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/B"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/optionALabelExam"
+                app:layout_constraintTop_toBottomOf="@+id/optionALabelExam" />
+
+            <TextView
+                android:id="@+id/optionCExam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/optionCLabelExam"
+                app:layout_constraintStart_toEndOf="@+id/optionCLabelExam"
+                app:layout_constraintTop_toTopOf="@+id/optionCLabelExam"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/optionCLabelExam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/C"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/optionBLabelExam"
+                app:layout_constraintTop_toBottomOf="@+id/optionBLabelExam" />
+
+            <TextView
+                android:id="@+id/optionDExam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/optionDLabelExam"
+                app:layout_constraintStart_toEndOf="@+id/optionDLabelExam"
+                app:layout_constraintTop_toTopOf="@+id/optionDLabelExam" />
+
+            <TextView
+                android:id="@+id/optionDLabelExam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/D"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/optionCLabelExam"
+                app:layout_constraintTop_toBottomOf="@+id/optionCLabelExam" />
+
+            <TextView
+                android:id="@+id/optionEExam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/optionELabelExam"
+                app:layout_constraintStart_toEndOf="@+id/optionELabelExam"
+                app:layout_constraintTop_toTopOf="@+id/optionELabelExam" />
+
+            <TextView
+                android:id="@+id/optionELabelExam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/E"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/optionDLabelExam"
+                app:layout_constraintTop_toBottomOf="@+id/optionDLabelExam"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/answerExam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="7dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkboxQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="@string/space" />
+
+            <ImageButton
+                android:id="@+id/showFileExam"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/button_attach_file"
+                android:contentDescription="@string/attach_file"
+                android:padding="2dp"
+                android:scaleType="centerInside" />
+
+            <ToggleButton
+                android:id="@+id/showAnswerExam"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/button_show_answer"
+                android:padding="10dp"
+                android:scaleType="centerInside" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
