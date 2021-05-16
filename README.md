@@ -5,6 +5,7 @@ change them in each creating exam activity.
 
 # Screenshots
 
-![s1](https://user-images.githubusercontent.com/57035819/118398556-d665a280-b661-11eb-8b1e-2ca6707d07b6.png)![s2](https://user-images.githubusercontent.com/57035819/118398563-dd8cb080-b661-11eb-8395-a429c8bd2db6.png)
+![s1](https://user-images.githubusercontent.com/57035819/118398556-d665a280-b661-11eb-8b1e-2ca6707d07b6.png)   ![s2](https://user-images.githubusercontent.com/57035819/118398563-dd8cb080-b661-11eb-8395-a429c8bd2db6.png)   ![s3](https://user-images.githubusercontent.com/57035819/118398579-ec736300-b661-11eb-8fe4-017fbda0c157.png)
+
 
 
